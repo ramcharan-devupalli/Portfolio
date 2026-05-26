@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: cadetblue;
+    color: rgb(27, 36, 39);
+    font-family: 'Archivo Black', sans-serif;
+}
+html {
+    scroll-behavior: smooth !important;
+  }
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem; 
+    background-color: rgb(6, 57, 58);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+nav {
+    transition: top 0.3s ease;
+}
+
+.nav-hidden {
+    top: -80px;
+}
+
+nav div {
+    display: flex;
+    gap: 2rem;
+}
+nav a {
+    font-weight: bold;
+}
+
+#logo {
+    border: 2px solid cornsilk;
+    padding: 0.4rem 1rem;
+}
+
+nav > a:last-child {
+    border: 2px solid cornsilk;
+    padding: 0.4rem 1rem;
+}
+
+nav a {
+    color: rgb(171, 196, 197);
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+    padding-top: 8rem;
+    text-align: center;
+}
+
+.main-photo {
+    border-radius: 50%;
+    border: solid rgb(6, 57, 58);
+    border-width: 0.5rem;
+}
+
+.main-photo:hover {
+    border-radius: 50%;
+    border: solid cornsilk;
+    border-width: 0.5rem;
+}
+
+.main-photo {
+    transition: 0.3s;
+}
+
+section {
+    padding: 3rem 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+p {
+    margin-top: 0.5rem;
+    color: rgb(27, 36, 39);
+}
+
+.project-card {
+    border: 2px solid rgb(27, 36, 39);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    background-color: rgb(123, 110, 158);
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+#projects a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-card {
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px)
+}
+
+.highlight {
+    color: rgb(121, 56, 206);
+}
+
+.social-btn {
+    display: inline-block;
+    border: 2px solid rgb(6, 57, 58);
+    border-radius: 8px;
+    padding: 0.5rem 1.2rem;
+    margin-right: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 1.5rem;
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    background-color: white;
+}
+
+.social-btn {
+    transition: 0.3s
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 500px;
+}
+
+input, textarea {
+    padding: 0.75rem;
+    border: 2px solid rgb(6, 57, 58);
+    border-radius: 8px;
+    background-color: snow;
+    color: rgb(27, 36, 39);
+    font-size: 1rem;
+}
+
+form button {
+    padding: 0.75rem;
+    background-color: rgb(6, 57, 58);
+    color:  rgb(171, 196, 197);
+    border: 2px solid snow;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: snow;
+    color: rgb(27, 36, 39);
+}
+
+form button
+{
+    transition: 0.3s;
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.cert-card {
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.cert-info {
+    background-color: rgb(6, 57, 58);
+    padding: 1rem;
+    border-radius: 0 0 8px 8px;
+}
+
+.cert-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    background-color: white;
+}
+
+.cert-info h3 {
+    color: rgb(171, 196, 197);
+    font-size: 2rem;
+}
+
+.cert-info p {
+    color: cadetblue;
+    font-size: 1.8rem;
+    margin-top: 0.25rem;
+}
+
+.cert-card:hover {
+    transform: translateY(-6px);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    border-top: 2px solid rgb(6, 57, 58);
+    color: rgb(27, 36, 39);
+    font-size:1.1rem;
+    font-weight: bold;
+}
